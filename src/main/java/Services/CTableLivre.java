@@ -207,19 +207,19 @@ public class CTableLivre {
         //table.setBdd(new CBDD(new CParametresStockageBDD("parametresBdd.properties")));
         CLivre test = new CLivre();
         test.setIdLivre(4);
-        test.setTitreLivre("fdddfgfdgdfg");
-        test.setSynopsisLivre("modification");
-        test.setNombrePagesLivre(789);
-        test.setISBN(7890);
+        test.setTitreLivre("Le Meilleur des Mondes");
+        test.setSynopsisLivre("C'est bien c'est super c'est beau et tout va bien comme dans le mailleur des mondes");
+        test.setNombrePagesLivre(548);
+        test.setISBN(78901);
         test.setAnneePublicationLivre(1978);
         test.setValidationLivre("VALIDE");
         test.setEditeur(new CEditeur(1));
         test.setLangue(new CLangue(1));
 
-        //table.insererLivre(test);
+        table.insererLivre(test);
         //table.supprimerLivre("5");
         //table.modifierLivre(4);
-        table.modifierLivre(test);
+        //table.modifierLivre(test);
         //table.modifierLivre(test);
         //table.printLivre(table.lireLesLivres());
 
