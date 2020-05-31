@@ -20,7 +20,6 @@ public class CLivre {
     protected int isbn;
     protected int anneePublicationLivre;
     protected String validationLivre;
-    protected CVignette vignette;
     protected CEditeur editeur;
     protected CLangue langue;
     protected ArrayList<CAuteur> auteurs;
@@ -30,7 +29,7 @@ public class CLivre {
 
     
 
-    public CLivre(int idLivre, String titreLivre, String synopsisLivre, int nombrePagesLivre, int isbn, int anneePublicationLivre, String validationLivre, CVignette vignette, CEditeur editeur, CLangue langue, ArrayList<CAuteur> auteur) {
+    public CLivre(int idLivre, String titreLivre, String synopsisLivre, int nombrePagesLivre, int isbn, int anneePublicationLivre, String validationLivre, CEditeur editeur, CLangue langue, ArrayList<CAuteur> auteur) {
         setIdLivre(idLivre);
         setTitreLivre(titreLivre);
         setSynopsisLivre(synopsisLivre);
@@ -38,7 +37,6 @@ public class CLivre {
         setISBN(isbn);
         setAnneePublicationLivre(anneePublicationLivre);
         setValidationLivre(validationLivre);
-        setVignette(vignette);
         setEditeur(editeur);
         setLangue(langue);
         setAuteurs(auteur);
@@ -125,13 +123,6 @@ public class CLivre {
         this.validationLivre = validationLivre;
     }
 
-    public CVignette getVignette() {
-        return vignette;
-    }
-
-    public final void setVignette(CVignette vignette) {
-        this.vignette = vignette;
-    }
 
     public CEditeur getEditeur() {
         return editeur;
