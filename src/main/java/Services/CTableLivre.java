@@ -206,19 +206,19 @@ public class CTableLivre {
         CTableLivre table = new CTableLivre(new CBDD(new CParametresStockageBDD("parametresBdd.properties")));
         //table.setBdd(new CBDD(new CParametresStockageBDD("parametresBdd.properties")));
         CLivre test = new CLivre();
-        test.setIdLivre(4);
-        test.setTitreLivre("Le Meilleur des Mondes");
-        test.setSynopsisLivre("C'est bien c'est super c'est beau et tout va bien comme dans le mailleur des mondes");
-        test.setNombrePagesLivre(548);
-        test.setISBN(78901);
-        test.setAnneePublicationLivre(1978);
+      //  test.setIdLivre(1);
+        test.setTitreLivre("L''Homme invisible");
+        test.setSynopsisLivre("Après quinze ans de recherches ruineuses, l''albinos Griffin invente une formule scientifique permettant de devenir invisible. Ayant réussi une expérience sur le chat de sa voisine, le savant décide d''expérimenter la formule sur lui-même, notamment pour fuir ses créanciers, avant de déclencher un incendie visant à effacer ses traces.");
+        test.setNombrePagesLivre(236);
+        test.setISBN(97855175);
+        test.setAnneePublicationLivre(1897);
         test.setValidationLivre("VALIDE");
-        test.setEditeur(new CEditeur(1));
+        test.setEditeur(new CEditeur(5));
         test.setLangue(new CLangue(1));
 
-        table.insererLivre(test);
+        //table.insererLivre(test);
         //table.supprimerLivre("5");
-        //table.modifierLivre(4);
+        //table.modifierLivre(8);
         //table.modifierLivre(test);
         //table.modifierLivre(test);
         //table.printLivre(table.lireLesLivres());

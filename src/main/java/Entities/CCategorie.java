@@ -9,16 +9,28 @@ package Entities;
  *
  * @author BtsSio9
  */
-public class CCategories {
+public class CCategorie {
 
     protected int idCategorie;
     protected String nomCategorie;
-
-    public CCategories(int idCategorie, String nomCategorie) {
+    
+    
+    //constructeur
+    public CCategorie(int idCategorie, String nomCategorie) {
         setIdCategorie(idCategorie);
         setNomCategorie(nomCategorie);
     }
 
+    
+    public CCategorie(String nomCategorie) {
+        setNomCategorie(nomCategorie);
+    }
+    
+    public CCategorie(int idCategorie){
+        setIdCategorie(idCategorie);
+    }
+    
+    //Getter et Setter
     public int getIdCategorie() {
         return idCategorie;
     }

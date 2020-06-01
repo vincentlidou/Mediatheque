@@ -162,11 +162,11 @@ public class CTableEditeur {
     public static void main(String[] args) {
         CTableEditeur tableEditeur = new CTableEditeur();
         CEditeur editeur = new CEditeur(1, "Hachette");
-        //tableEditeur.insererEditeur(editeur);
+        tableEditeur.insererEditeur(editeur);
         //tableEditeur.supprimerEditeur("1");
         //tableEditeur.modifierEditeur(editeur);
         //tableEditeur.printEditeur(tableEditeur.lireEditeur());
-        tableEditeur.printEditeur(tableEditeur.lireUnEditeur(1));
+        //tableEditeur.printEditeur(tableEditeur.lireUnEditeur(1));
         
     }
 }

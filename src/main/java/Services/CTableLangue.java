@@ -81,7 +81,7 @@ public class CTableLangue {
       //Rqt a executer
     String req = "UPDATE `langue` SET Nom_Langue ='"
                 + langue.getNomLangue()
-                + "' , Nom_Langue = '"+"';";
+                + "' WHERE Id_Langue = '" + langue.getIdLangue()+"';";
     
         int res = -1;
         if (bdd.connecter() == true) {//Execution de la rqt
@@ -159,12 +159,12 @@ public class CTableLangue {
     //test methode
     public static void main(String[] args) {
         CTableLangue tableLangue = new CTableLangue();
-        CLangue langue = new CLangue(1, "frenchy");
-        //tableLangue.insererLangue(langue);
-        //tableLangue.supprimerLangue("1");
+        CLangue langue = new CLangue(3, "test01");
+       //tableLangue.insererLangue(langue);
+        tableLangue.supprimerLangue("3");
         //tableLangue.modifierLangue(langue);
         //tableLangue.printLangue(tableLangue.lireLangue());
-        tableLangue.printLangue(tableLangue.lireUneLangue(1));
+        //tableLangue.printLangue(tableLangue.lireUneLangue(1));
         
     }
 }
